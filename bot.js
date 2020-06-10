@@ -1,13 +1,15 @@
-const assert        = require('assert');
-const _             = require('lodash');
-const fs            = require('fs');
-const request       = require('sync-request');
-const jsPackTools   = require('js-packtools');
+const assert      = require('assert');
+const _           = require('lodash');
+const fs          = require('fs');
+const request     = require('sync-request');
+const jsPackTools = require('js-packtools');
 //const compressing = require('compressing');
+
+require('dotenv').config();
 
 let u = new jsPackTools({folderName:__dirname+'/log'});
 
-let data = ['ivonne_peh'];
+let data = ['jasp402'];
 
 
     describe('webdriver.io page', () => {
@@ -21,8 +23,8 @@ let data = ['ivonne_peh'];
 
         $('input[name="password"]').waitForExist(3000);
         console.log($('input[name="password"]'));
-        $('input[name="password"]').setValue('19112829');
-        $('input[name="username"]').setValue('jasp402@gmail.com');
+        $('input[name="password"]').setValue(process.env.PASS);
+        $('input[name="username"]').setValue(process.env.USER);
         $('button[type="submit"]').click();
 
         browser.pause(10000);

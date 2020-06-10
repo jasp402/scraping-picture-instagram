@@ -1,0 +1,46 @@
+{
+  "name": "scraping-picture-instagram",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bot.js",
+  "dependencies": {
+    "compressing": "^1.4.0",
+    "dotenv": "^8.2.0",
+    "@wdio/cli": "^5.8.0",
+    "@wdio/dot-reporter": "^5.7.8",
+    "@wdio/selenium-standalone-service": "^5.8.0",
+    "@wdio/spec-reporter": "^5.8.0",
+    "chai": "^4.2.0",
+    "imdb-api": "^4.0.2",
+    "js-packtools": "^0.3.2",
+    "mysql": "^2.17.1",
+    "package.json": "^2.0.1",
+    "sync-mysql": "^3.0.1",
+    "sync-request": "^6.1.0",
+    "wdio-local-runner": "^5.0.0-alpha.7",
+    "wdio-selenium-standalone-service": "^0.0.12",
+    "wdio-spec-reporter": "^0.1.5",
+    "webdriverio": "^5.8.0",
+    "yargs": "^13.2.2"
+  },
+  "devDependencies": {
+    "@wdio/local-runner": "^5.8.0",
+    "@wdio/mocha-framework": "^5.8.0",
+    "@wdio/sync": "^5.8.0",
+    "compressing": "^1.4.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jasp402/scraping-picture-instagram.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jasp402/scraping-picture-instagram/issues"
+  },
+  "homepage": "https://github.com/jasp402/scraping-picture-instagram#readme"
+}
