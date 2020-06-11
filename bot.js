@@ -80,7 +80,7 @@ function extractImages(account) {
 
     getImgSrcAttr = _.uniq(_.flattenDeep(getImgSrcAttr));
     u.logExecution(getImgSrcAttr.length+' Descargado');
-    u.logExecution(JSON.stringify(getImgSrcAttr));
+    //u.logExecution(JSON.stringify(getImgSrcAttr));
     //console.log(JSON.stringify(getImgSrcAttr));
 
     /** Extrar URLs
