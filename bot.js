@@ -9,7 +9,15 @@ require('dotenv').config();
 
 let u = new jsPackTools({folderName:__dirname+'/log'});
 
-let data = ['jasp402'];
+const accounts  = process.env.npm_config_accounts;
+
+console.log(accounts)
+
+let data = [];
+
+if(accounts){
+    data = accounts.split(',');
+}
 
 
     describe('webdriver.io page', () => {

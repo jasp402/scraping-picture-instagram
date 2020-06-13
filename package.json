@@ -30,7 +30,7 @@
     "compressing": "^1.4.0"
   },
   "scripts": {
-    "test": "mocha"
+    "scrap": "npx wdio controller.js"
   },
   "repository": {
     "type": "git",
